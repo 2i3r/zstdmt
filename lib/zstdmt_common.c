@@ -35,7 +35,7 @@ const char *ZSTDMT_getErrorString(size_t code)
 	if (ZSTD_isError(zstdmt_errcode))
 		return ZSTD_getErrorName(zstdmt_errcode);
 
-	static const char *notErrorCode = "Unspecified error lz4mt code";
+	static const char *notErrorCode = "Unspecified error zstmt code";
 	switch ((ZSTDMT_ErrorCode)(0-code)) {
 	case PREFIX(no_error):
 		return "No error detected";

@@ -35,7 +35,7 @@ const char *LZ5MT_getErrorString(size_t code)
 	if (LZ5F_isError(lz5mt_errcode))
 		return LZ5F_getErrorName(lz5mt_errcode);
 
-	static const char *notErrorCode = "Unspecified error lz4mt code";
+	static const char *notErrorCode = "Unspecified error lz5mt code";
 	switch ((LZ5MT_ErrorCode)(0-code)) {
 	case PREFIX(no_error):
 		return "No error detected";
